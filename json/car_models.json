@@ -1,0 +1,123 @@
+
+[
+    {
+        "brand": "Nissan",
+        "model": "Skyline GT-R V-Spec (R34)",
+        "yr": 1999,
+        "hp": 280,
+        "nm": 392,
+        "acc": 4.6,
+        "maxSpeed": 266,
+        "weight": 1560,
+        "traction": "AWD",
+        "price": 60000
+    },
+    {
+        "brand": "Toyota",
+        "model": "Supra MK4",
+        "yr": 1998,
+        "hp": 280,
+        "nm": 431,
+        "acc": 4.9,
+        "maxSpeed": 250,
+        "weight": 1565,
+        "traction": "RWD",
+        "price": 55000
+    },
+    {
+        "brand": "Honda",
+        "model": "NSX Type R",
+        "yr": 1992,
+        "hp": 280,
+        "nm": 294,
+        "acc": 5.0,
+        "maxSpeed": 270,
+        "weight": 1230,
+        "traction": "RWD",
+        "price": 80000
+    },
+    {
+        "brand": "Mazda",
+        "model": "RX-7 FD3S",
+        "yr": 1999,
+        "hp": 280,
+        "nm": 314,
+        "acc": 5.3,
+        "maxSpeed": 250,
+        "weight": 1280,
+        "traction": "RWD",
+        "price": 45000
+    },
+    {
+        "brand": "Subaru",
+        "model": "Impreza WRX STI 22B",
+        "yr": 1998,
+        "hp": 280,
+        "nm": 363,
+        "acc": 4.7,
+        "maxSpeed": 248,
+        "weight": 1270,
+        "traction": "AWD",
+        "price": 90000
+    },
+    {
+        "brand": "Mitsubishi",
+        "model": "Lancer Evolution VI TME",
+        "yr": 1999,
+        "hp": 280,
+        "nm": 373,
+        "acc": 4.4,
+        "maxSpeed": 250,
+        "weight": 1360,
+        "traction": "AWD",
+        "price": 50000
+    },
+    {
+        "brand": "Toyota",
+        "model": "AE86 Trueno",
+        "yr": 1986,
+        "hp": 130,
+        "nm": 149,
+        "acc": 8.1,
+        "maxSpeed": 200,
+        "weight": 970,
+        "traction": "RWD",
+        "price": 25000
+    },
+    {
+        "brand": "Honda",
+        "model": "Civic Type R EK9",
+        "yr": 1997,
+        "hp": 185,
+        "nm": 160,
+        "acc": 6.5,
+        "maxSpeed": 225,
+        "weight": 1090,
+        "traction": "FWD",
+        "price": 30000
+    },
+    {
+        "brand": "Mazda",
+        "model": "Mazda MX-5 NA",
+        "yr": 1990,
+        "hp": 116,
+        "nm": 136,
+        "acc": 8.8,
+        "maxSpeed": 190,
+        "weight": 940,
+        "traction": "RWD",
+        "price": 28000
+    },
+    {
+        "brand": "Nissan",
+        "model": "Silvia S15 Spec-R",
+        "yr": 1999,
+        "hp": 250,
+        "nm": 275,
+        "acc": 5.5,
+        "maxSpeed": 235,
+        "weight": 1240,
+        "traction": "RWD",
+        "price": 40000
+    }
+]

@@ -1,0 +1,5 @@
+{
+    "getUserById" : "SELECT * FROM users WHERE id = %s",
+    "insertUser" : "INSERT INTO users (id,username) VALUES (%s,%s)",
+    "insertCarModel" : "INSERT INTO car_models (brand, model, yr, hp, nm, acc, maxSpeed, weight, traction, price) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ON CONFLICT (brand, model, yr) DO NOTHING"
+}
