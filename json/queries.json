@@ -1,5 +1,7 @@
 {
     "getUserById" : "SELECT * FROM users WHERE id = %s",
     "insertUser" : "INSERT INTO users (id,username) VALUES (%s,%s)",
-    "insertCarModel" : "INSERT INTO car_models (brand, model, yr, hp, nm, acc, maxSpeed, weight, traction, price) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ON CONFLICT (brand, model, yr) DO NOTHING"
+    "insertCarModel" : "INSERT INTO car_models (brand, model, yr, hp, nm, acc, maxSpeed, weight, traction, price) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ON CONFLICT (brand, model, yr) DO NOTHING",
+    "listCarModels" : "SELECT * FROM car_models ORDER BY price ASC",
+    "getCarModelByName" : "SELECT * FROM car_models WHERE brand ILIKE '%%s%' AND model ILIKE '%%s%' AND yr = %s LIMIT 1"
 }

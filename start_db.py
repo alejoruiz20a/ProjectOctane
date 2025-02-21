@@ -1,7 +1,7 @@
 import psycopg2
 import os
 from dotenv import load_dotenv
-from db import connect_db
+from db.db import get_connection, release_connection
 import json
 
 load_dotenv()
@@ -12,7 +12,7 @@ QUERIES_PATH = "json/queries.json"
 
 def insert_cars():
     try:
-        conn = connect_db()
+        conn = get_connection()
         cur = conn.cursor()
 
         with open(CARS_PATH, "r", encoding="utf-8") as file:
@@ -25,14 +25,15 @@ def insert_cars():
             cur.execute(queries['insertCarModel'],(car["brand"], car["model"], car["yr"], car["hp"], car["nm"], car["acc"],car["maxSpeed"], car["weight"], car["traction"], car["price"]))
 
         conn.commit()
-        cur.close()
-        conn.close()
     except Exception as e:
         print(f"Error: {e}")
+    finally:
+        if conn:
+            release_connection(conn)
 
 def run_migrations():
     try:
-        conn = connect_db()
+        conn = get_connection()
         cur = conn.cursor()
 
         with open(MIGRATIONS_PATH, "r", encoding="utf-8") as file:
@@ -40,12 +41,13 @@ def run_migrations():
             cur.execute(sql)
         
         conn.commit()
-        cur.close()
-        conn.close()
         insert_cars()
         print("Migraciones ejecutadas correctamente.")
     except Exception as e:
         print(f"Error ejecutando las migraciones: {e}")
+    finally:
+        if conn:
+            release_connection(conn)
 
     
 
