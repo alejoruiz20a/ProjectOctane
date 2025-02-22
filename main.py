@@ -21,7 +21,7 @@ intents.message_content = True  # Permite leer mensajes en servidores
 
 # CLIENTE
 bot = commands.Bot(command_prefix = "!", intents = intents)
-
+#FDFSDFSDFSDF
 
 
 @bot.command()
